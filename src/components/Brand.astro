@@ -1,0 +1,36 @@
+---
+import imageBrand1 from "../assets/images/brands/cann1.jpg"
+import imageBrand2 from "../assets/images/brands/cann2.jpg"
+import imageBrand3 from "../assets/images/brands/cann3.jpg"
+---
+
+<section class="max-w-4xl m-auto w-full flex flex-col justify-center items-start gap-12">
+
+    <article class="w-full flex flex-col gap-4 justify-center items-center">
+        <header>
+            <h2 class="text-2xl font-semibold">Trusted by top cannabis brands</h2>
+        </header>
+        
+        <ul class="flex flex-row flex-wrap gap-4 justify-center items-center
+        [&>li>img]:size-32 [&>li>img]:md:size-40 [&>li>img]:rounded-lg ">
+            <li><img src={imageBrand1?.src} alt=""></li>
+            <li><img src={imageBrand3?.src} alt=""></li>
+            <li><img src={imageBrand1?.src} alt=""></li>
+            <li><img src={imageBrand2?.src} alt=""></li>
+            <li><img src={imageBrand1?.src} alt=""></li>
+        </ul>
+    </article>
+    
+    <article class="w-full flex flex-col gap-12 justify-center items-center">
+
+        <header class="flex flex-col gap-4 justify-center items-center w-full">
+            <h2 class="text-2xl font-bold">Ready to take the next step?</h2>
+
+            <p class="max-w-[600px] text-pretty">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora numquam iste cupiditate, odit officiis laborum veniam excepturi placeat expedita aperiam, adipisci laboriosam harum? Cum eius quam unde consequuntur magnam nobis repellat, deserunt aliquam, reiciendis repudiandae fuga beatae delectus atque assumenda.</p>
+        </header>
+        
+        <a class="py-2.5 px-5 font-semibold text-black bg-green-500  transition-colors duration-300 hover:bg-[#2ea748]  rounded-lg" href="http://" target="_blank" rel="noopener noreferrer">Schedule a free consultation</a>
+
+    </article>
+
+</section>
