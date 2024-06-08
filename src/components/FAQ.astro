@@ -1,0 +1,70 @@
+---
+
+---
+
+
+<section class="max-w-4xl m-auto w-full flex flex-col justify-center items-start gap-12">
+
+    <h2 class="text-3xl font-bold">Frequently asked questions</h2>
+
+    <article class="flex flex-col gap-4 justify-center items-start w-full
+    [&>details]:w-full [&>details]:rounded-lg [&>details]:p-4 [&>details]:border [&>details]:border-[#d3d3d3] [&_p]:text-pretty [&_p]:pt-4 [&_p]:px-4">
+
+        <details name="find" open>
+            <summary>Where i can find my cannabis club?</summary>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita voluptatibus omnis assumenda dolores aliquid. Reprehenderit officia omnis pariatur, unde ullam laboriosam, sunt dolorem at porro expedita totam exercitationem tempore necessitatibus modi ea. Natus iste nesciunt assumenda temporibus molestiae voluptas velit ea laboriosam maiores, cupiditate dolor voluptatem amet ipsa nemo! Voluptatibus facilis deserunt placeat consequuntur nobis in enim saepe reprehenderit vitae.</p>
+        </details>
+        <details name="find">    
+            <summary>What is the process the obtaining permits for a cannabis club?</summary>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit minima nobis quos voluptatum inventore commodi, ipsa possimus velit, repellendus exercitationem magni officiis illo culpa quidem totam reiciendis, maxime soluta quam doloribus dolorum? Enim magni quaerat suscipit rem totam reprehenderit dolores!</p>
+        </details>
+
+    </article>
+
+</section>
+
+<style>
+
+details {
+  margin-bottom: .5rem;
+  overflow: hidden;
+}
+
+summary {
+  border: 1px solid #ececec;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 1rem;
+  display: block;
+  padding-left: 2.2rem;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+summary:before {
+  content: '';
+  border-width: .4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #000000;
+  position: absolute;
+  top: 1.3rem;
+  left: 1rem;
+  transform: rotate(0);
+  transform-origin: .2rem 50%;
+  transition: .25s transform ease;
+}
+
+    
+details[open] > summary:before {
+  transform: rotate(90deg);
+}
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+details > ul {
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+</style>
